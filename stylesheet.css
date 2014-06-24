@@ -1,0 +1,66 @@
+/*   HEADER
+======================================*/
+
+.main-header
+{
+	width: 100%;
+	background-color: #aaccff;
+	display: inline-block;
+}
+
+.logo
+{
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #559911;
+	display: inline-block;
+	background-color: #ffff33;
+	padding: 10px 30px;
+	border-radius: 20px;
+	margin: 10px 10px;
+}
+
+.logo p
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+/*   MAIN
+======================================*/
+.wrapper
+{
+	width: 90%;
+}
+
+
+/*   FOOTER
+======================================*/
+
+
+
+
+/*   MEDIA QUERIES
+======================================*/
+
+@media (max-width: 768px)
+{
+	.logo
+	{
+		display: block;
+		margin: 10px auto;
+		padding: 0;
+		width: 80%;
+		
+	}
+	.logo p
+	{
+		text-align: center;
+	}
+}
+
+
+
