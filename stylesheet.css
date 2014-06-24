@@ -110,12 +110,13 @@
 	.logo p
 	{
 		text-align: center;
+		font-size: 6em;
 	}
 
 	.link
 	{
 		margin: auto;
-
+		font-size: 4em;
 	}
 
 	.nav
