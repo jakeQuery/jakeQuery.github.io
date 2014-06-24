@@ -1,10 +1,18 @@
+/*  INSTALLED FONTS
+======================================*/
+/*  Body text:  font-family: 'Open Sans Condensed', sans-serif;
+/*  Navbar text:   font-family: 'Questrial', sans-serif;   
+
+
+
+
 /*   HEADER
 ======================================*/
 
 .main-header
 {
 	width: 100%;
-	background-color: #aaccff;
+	background-color: #ccddee;
 	display: inline-block;
 }
 
@@ -13,12 +21,17 @@
 	font-size: 3em;
 	font-weight: bold;
 	text-decoration: none;
-	color: #559911;
+	color: #123456;
 	display: inline-block;
-	background-color: #ffff33;
 	padding: 10px 30px;
-	border-radius: 20px;
 	margin: 10px 10px;
+	border: 3px solid #123456;
+}
+
+.logo:hover
+{
+	color: #ccddee;
+	background-color: #123456;
 }
 
 .logo p
@@ -27,6 +40,45 @@
 	margin-bottom: 0;
 }
 
+.nav
+{
+	display: inline-block;
+	margin-left: 5%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	
+}
+
+.nav li
+{
+	display: inline-block;
+}
+
+.link
+{
+	font-size: 1.5em;
+	font-weight: none;
+	text-decoration: none;
+	color: #123456;
+	margin-right: 40px;
+	display: inline-block;
+	padding: 0 0;
+	font-family: 'Questrial', sans-serif;
+	border: 2px solid #123456;
+	padding: 3px 6px;
+}
+
+.link:hover
+{
+	background-color: #123456;
+	color: #ccddee;
+
+}
+
+.link p
+{
+	margin: 0 0;
+}
 
 
 /*   MAIN
@@ -59,7 +111,34 @@
 	.logo p
 	{
 		text-align: center;
+		font-size: 0.8em;
 	}
+
+	.link
+	{
+		font-size: 1em;
+		margin: auto;
+
+	}
+
+	.nav
+	{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.nav li
+	{
+		display: inline-block;
+		margin: auto;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+
+
 }
 
 
