@@ -97,7 +97,7 @@
 /*   MEDIA QUERIES
 ======================================*/
 
-@media (max-width: 768px)
+@media handheld
 {
 	.logo
 	{
