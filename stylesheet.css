@@ -85,6 +85,8 @@
 body
 {
 	background-color: #D1E8EB;
+	margin: 0;
+	padding: 0;
 }
 
 .wrapper
@@ -92,15 +94,71 @@ body
 	width: 100%;
 }
 
-.mainpicture
+/* banner =======*/
+.banner
 {
+	width: 100%;
+	height: 400px;
+	background-color: #4c9dff;
 	opacity: 1;
+	text-align: center;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 }
 
-.mainpicture:hover
+.bannertext
 {
-	
+	width:80%;
+	height:100%;
+	font-size: 42px;
+	/*background-color: #777777;*/
+
+
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	left top,
+	color-stop(0, #19670F),
+	color-stop(0, #849EA1),
+	color-stop(1, #D1E8EB),
+	color-stop(1, #FBFFFF),
+	color-stop(1, #FBFFFF)
+	);
+	background-image: -o-linear-gradient(left, #19670F 0%, #849EA1 0%, #D1E8EB 100%, #FBFFFF 100%, #FBFFFF 100%);
+	background-image: -moz-linear-gradient(left, #19670F 0%, #849EA1 0%, #D1E8EB 100%, #FBFFFF 100%, #FBFFFF 100%);
+	background-image: -webkit-linear-gradient(left, #19670F 0%, #849EA1 0%, #D1E8EB 100%, #FBFFFF 100%, #FBFFFF 100%);
+	background-image: -ms-linear-gradient(left, #19670F 0%, #849EA1 0%, #D1E8EB 100%, #FBFFFF 100%, #FBFFFF 100%);
+	background-image: linear-gradient(to left, #19670F 0%, #849EA1 0%, #D1E8EB 100%, #FBFFFF 100%, #FBFFFF 100%);
+
+
+	border-radius: 10px;
+	display: inline-block;
+	position: relative;
+	margin-left: -200%;
 }
+
+.bannertext p
+{
+	margin: 100px;
+	float: right;
+}
+
+.fader
+{
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	background-color: white;
+	opacity: 0.2;
+}
+
+
+
+
+
+
+
 
 .whoami
 {
