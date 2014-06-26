@@ -92,6 +92,26 @@ body
 	width: 100%;
 }
 
+.mainpicture
+{
+	opacity: 1;
+}
+
+.mainpicture:hover
+{
+	
+}
+
+.whoami
+{
+	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+.skills
+{
+	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
 
 /*   FOOTER
 ======================================*/
