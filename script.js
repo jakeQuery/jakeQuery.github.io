@@ -60,9 +60,11 @@ $(document).ready(function()
     $('.zoomable').hover(function()
     {
         $(this).stop().animate({left: "1%"}, textShiftSpeed_ms);
+        $(this).fadeTo(75, 1);
     }, function()
     {
         $(this).stop().animate({left: "-1%"}, textShiftSpeed_ms);
+        $(this).fadeTo(75, 0.75);
     });
     
     //trigger quote when you scroll far enough
