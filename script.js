@@ -12,6 +12,7 @@ $(document).ready(function()
     var animateTime_ms = 700;
     var fadeTime_ms = 500;
     var underscoreToggle = 1;
+    var textShiftSpeed_ms = 200;
 
     //things to do right off the bat
     manageNameSize();
@@ -58,10 +59,10 @@ $(document).ready(function()
     //shift text
     $('.zoomable').hover(function()
     {
-        $(this).stop().animate({left: "1%"}, 750);
+        $(this).stop().animate({left: "1%"}, textShiftSpeed_ms);
     }, function()
     {
-        $(this).stop().animate({left: "-1%"}, 750);
+        $(this).stop().animate({left: "-1%"}, textShiftSpeed_ms);
     });
     
     //trigger quote when you scroll far enough
