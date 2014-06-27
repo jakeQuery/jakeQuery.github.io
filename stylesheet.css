@@ -109,9 +109,9 @@ body
 
 .bannertext
 {
-	width:80%;
+	width:90%;
 	height:100%;
-	font-size: 42px;
+	font-size: 60px;
 	/*background-color: #777777;*/
 
 
@@ -153,23 +153,84 @@ body
 	opacity: 0.2;
 }
 
-
-
-
-
-
-
-
-.whoami
+.selfpic
 {
-	font-family: 'Open Sans Condensed', sans-serif;	
+	height: 100%;
+	margin-left: -35%;
+	position: relative;
+	opacity: 0;
 }
 
+.myname
+{
+	position: absolute;
+	text-align: center;
+	margin-left: 25%;
+}
+
+
+
+
+/*  Who Am I? ==============*/
+.whoami
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.whoami h1
+{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+
+.whoami p
+{
+    font-size: 22px;
+    margin-top: 0;
+    margin-left: 7%;   
+    margin-right: 20%;
+}
+
+.zoomable
+{
+    display: inline-block;
+    position: relative;
+}
+
+
+/* Skills ===================*/
 .skills
 {
 	font-family: 'Open Sans Condensed', sans-serif;	
 }
 
+.skills h1
+{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+
+.skills h3
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 7%;
+    margin-top: 0;
+    
+}
+
+.skills p
+{
+    font-size: 22px;
+    margin-top: 0;
+    margin-left: 10%;   
+    margin-right: 20%;
+}
 
 /*   FOOTER
 ======================================*/
@@ -219,6 +280,11 @@ body
 		margin: auto;
 		margin-right: 5%;
 		margin-left: 5%;
+	}
+
+	.bannertext
+	{
+		font-size: 30px;
 	}
 
 
