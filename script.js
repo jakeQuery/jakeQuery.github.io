@@ -1,7 +1,7 @@
 //manage name size when window resizes
 function manageNameSize()
 {
-	$('.myname').css('font-size',($(window).width()*0.08)+'px');
+	$('.myname').css('font-size',($(window).width()*0.08)+'px');    
 }
 
 $(document).ready(function()
@@ -16,7 +16,17 @@ $(document).ready(function()
 
     //things to do right off the bat
     manageNameSize();
-
+    
+    //navbar effects
+    $(".link").hover(function()
+    {
+        $(this).css("border-top", "2px solid #4c9dff");
+    }, function()
+    {
+        $(this).css("border-top", "none");
+    });
+    
+    
     //hover transparency
     $(".banner").hover(function()
     {
@@ -59,11 +69,11 @@ $(document).ready(function()
     //shift text
     $('.zoomable').hover(function()
     {
-        $(this).stop().animate({left: "1%"}, textShiftSpeed_ms);
+        $(this).stop().animate({left: "0.3%"}, textShiftSpeed_ms);
         $(this).fadeTo(75, 1);
     }, function()
     {
-        $(this).stop().animate({left: "-1%"}, textShiftSpeed_ms);
+        $(this).stop().animate({left: "-0.3%"}, textShiftSpeed_ms);
         $(this).fadeTo(75, 0.75);
     });
     
@@ -81,6 +91,39 @@ $(document).ready(function()
             $('.credit').fadeTo(1200, 1);
         }
     });
-        
+    
+    //zoom effect for social media links
+    
+    $('.social-link').hover(function()
+    {
+        $(this).stop().fadeTo(200, 1);
+    }, function()
+    {
+        $(this).stop().fadeTo(200, 0.7);
+    });
+    
+//    //zoom effect for skills buttons
+//    $(document).ready( function() {
+//    $('.skills-list li').hover(
+//        function() {
+//            $('.skills-title', this).stop().fadeTo(200, 0);
+//            $(this).stop().animate({ 'zoom': 1.2 }, 400);
+//            $(".skills-title").text('I know HTML, CSS, jQuery, C++, C, VB, MATLAB, ...');
+//            $('.skills-title').css('font-size', '42px');
+//            $('.skills-title').css('margin-top', '10px');
+//            $('.skills-title', this).stop().fadeTo(200, 1);
+//            
+//            updateFontSize = false;
+//        },
+//        function() {
+//            $('.skills-title', this).stop().fadeTo(200, 0);
+//            $(this).stop().animate({ 'zoom': 1 }, 400);
+//            $(".skills-title").text('Major Skills');
+//            updateFontSize = true;
+//            manageNameSize();
+//            $('.skills-title', this).stop().fadeTo(200, 1);
+//        });
+//    });
+//        
                         
 });
