@@ -14,9 +14,11 @@ $(document).ready(function()
     var underscoreToggle = 1;
     var textShiftSpeed_ms = 200;
 
+    ///////////////////////////////////////////////
     //things to do right off the bat
     manageNameSize();
     
+    ///////////////////////////////////////////////
     //navbar effects
     $(".link").hover(function()
     {
@@ -27,6 +29,7 @@ $(document).ready(function()
     });
     
     
+    ///////////////////////////////////////////////
     //hover transparency
     $(".banner").hover(function()
     {
@@ -45,12 +48,14 @@ $(document).ready(function()
 
     });
     
+    ///////////////////////////////////////////////
     //change size of name when window is resized
     $(window).resize(function()
     {
         manageNameSize();
     });
 
+    ///////////////////////////////////////////////
     //make underscore flash
     setInterval(function() 
     {
@@ -66,6 +71,7 @@ $(document).ready(function()
         }
     }, 500);
     
+    ///////////////////////////////////////////////
     //shift text
     $('.zoomable').hover(function()
     {
@@ -77,6 +83,7 @@ $(document).ready(function()
         $(this).fadeTo(75, 0.75);
     });
     
+    ///////////////////////////////////////////////
     //trigger quote when you scroll far enough
     $(window).on('scroll', function() {
         var y_scroll_pos = window.pageYOffset;
@@ -92,8 +99,8 @@ $(document).ready(function()
         }
     });
     
-    //zoom effect for social media links
-    
+    ///////////////////////////////////////////////
+    //fade effect for social media links    
     $('.social-link').hover(function()
     {
         $(this).stop().fadeTo(200, 1);
@@ -101,29 +108,5 @@ $(document).ready(function()
     {
         $(this).stop().fadeTo(200, 0.7);
     });
-    
-//    //zoom effect for skills buttons
-//    $(document).ready( function() {
-//    $('.skills-list li').hover(
-//        function() {
-//            $('.skills-title', this).stop().fadeTo(200, 0);
-//            $(this).stop().animate({ 'zoom': 1.2 }, 400);
-//            $(".skills-title").text('I know HTML, CSS, jQuery, C++, C, VB, MATLAB, ...');
-//            $('.skills-title').css('font-size', '42px');
-//            $('.skills-title').css('margin-top', '10px');
-//            $('.skills-title', this).stop().fadeTo(200, 1);
-//            
-//            updateFontSize = false;
-//        },
-//        function() {
-//            $('.skills-title', this).stop().fadeTo(200, 0);
-//            $(this).stop().animate({ 'zoom': 1 }, 400);
-//            $(".skills-title").text('Major Skills');
-//            updateFontSize = true;
-//            manageNameSize();
-//            $('.skills-title', this).stop().fadeTo(200, 1);
-//        });
-//    });
-//        
                         
 });
