@@ -1,7 +1,19 @@
 //manage name size when window resizes
 function manageNameSize()
 {
-	$('.myname').css('font-size',($(window).width()*0.08)+'px');    
+	$('.myname').css('font-size',($(window).width()*0.08)+'px');
+    var windowWidth = $(window).width();
+    var textMargin = (10/((windowWidth)/(10000)));
+    
+    if(windowWidth > 1920/4)
+    {
+        $('.myname').css('margin-top', textMargin+50);
+    }
+    else
+    {
+        $('.myname').css('margin-top', textMargin/(windowWidth/100));  
+    }
+    
 }
 
 $(document).ready(function()
@@ -87,7 +99,7 @@ $(document).ready(function()
     //trigger quote when you scroll far enough
     $(window).on('scroll', function() {
         var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test = 900;             // set to whatever you want it to be
+        var scroll_pos_test = 775;             // set to whatever you want it to be
 
         if(y_scroll_pos > scroll_pos_test) {
             $('.quote').fadeTo(1200, 1);
