@@ -388,6 +388,38 @@ body
 }
 
 
+/* My Work
+==================================================================================*/
+.list-of-work
+{
+    width:60%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.list-of-work li
+{
+    height: 300px;
+    width: 300px;  
+    border: 2px solid #555555;
+}
+
+.list-of-work h3
+{
+    display: inline-block;
+    font-size: 32px;
+    margin: 30px 20px;
+    position: absolute;
+    text-shadow: 5px 5px 8px #333333;
+}
+
+.list-of-work img
+{
+    position: absolute;
+    opacity: 0.4;
+}
+
+
 /*   MEDIA QUERIES
 ======================================*/
 

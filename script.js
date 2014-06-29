@@ -120,5 +120,51 @@ $(document).ready(function()
     {
         $(this).stop().fadeTo(200, 0.7);
     });
+    
+    
+/////////////////////////////////////////////////////////
+// My Work
+/////////////////////////////////////////////////////////
+    
+    $('.list-of-work li').hover(function()
+    {
+        $('h3', this).stop().fadeTo(200, 0);
+        $('img', this).stop().fadeTo(200, 1);
+        
+        var h = $(this).height();
+        var w = $(this).width();
+
+        //get div dimensions
+        var div_h =$(this).height();
+        var div_w =$(this).width();
+
+        var  pY = Math.round((div_h - h) / 2) + 'px';
+        var  pX = Math.round((div_w - w) / 2) + 'px';
+
+        $(this).animate({
+            opacity:"1", 
+            zoom: '120%'
+        }, 200)
+    
+    }, function()
+    {
+        $('h3', this).stop().fadeTo(200, 1);
+        $('img', this).stop().fadeTo(200, 0.4);
+        
+        var h = $(this).height();
+        var w = $(this).width();
+
+        //get div dimensions
+        var div_h =$(this).height();
+        var div_w =$(this).width();
+
+        var  pY = Math.round((div_h - h) / 2) + 'px';
+        var  pX = Math.round((div_w - w) / 2) + 'px';
+
+        $(this).animate({
+            opacity:"1", 
+            zoom: '100%'
+        }, 200)
+    });
                         
 });
