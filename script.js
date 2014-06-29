@@ -21,7 +21,7 @@ $(document).ready(function()
 /////////////////////////////////////////////////////
 //   ABOUT ME
 /////////////////////////////////////////////////////
-    var animateTime_ms = 700;
+    var animateTime_ms = 300;
     var fadeTime_ms = 500;
     var underscoreToggle = 1;
     var textShiftSpeed_ms = 200;
@@ -87,11 +87,11 @@ $(document).ready(function()
     //shift text
     $('.zoomable').hover(function()
     {
-        $(this).stop().animate({left: "0.3%"}, textShiftSpeed_ms);
+        $(this).stop().animate({left: "0.1%"}, textShiftSpeed_ms);
         $(this).fadeTo(75, 1);
     }, function()
     {
-        $(this).stop().animate({left: "-0.3%"}, textShiftSpeed_ms);
+        $(this).stop().animate({left: "-0.1%"}, textShiftSpeed_ms);
         $(this).fadeTo(75, 0.75);
     });
     
