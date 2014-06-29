@@ -126,6 +126,8 @@ $(document).ready(function()
 // My Work
 /////////////////////////////////////////////////////////
     
+    var zoomSpeed = 400;
+    
     $('.list-of-work li').hover(function()
     {
         $('h3', this).stop().fadeTo(200, 0);
@@ -141,10 +143,10 @@ $(document).ready(function()
         var  pY = Math.round((div_h - h) / 2) + 'px';
         var  pX = Math.round((div_w - w) / 2) + 'px';
 
-        $(this).animate({
+        $(this).stop().animate({
             opacity:"1", 
             zoom: '120%'
-        }, 200)
+        }, zoomSpeed)
     
     }, function()
     {
@@ -161,10 +163,51 @@ $(document).ready(function()
         var  pY = Math.round((div_h - h) / 2) + 'px';
         var  pX = Math.round((div_w - w) / 2) + 'px';
 
-        $(this).animate({
+        $(this).stop().animate({
             opacity:"1", 
             zoom: '100%'
-        }, 200)
+        }, zoomSpeed)
+    });
+    
+    $('.jobs li').hover(function()
+    {
+        $('h3', this).stop().fadeTo(200, 0);
+        $('img', this).stop().fadeTo(200, 1);
+        
+        var h = $(this).height();
+        var w = $(this).width();
+
+        //get div dimensions
+        var div_h =$(this).height();
+        var div_w =$(this).width();
+
+        var  pY = Math.round((div_h - h) / 2) + 'px';
+        var  pX = Math.round((div_w - w) / 2) + 'px';
+
+        $(this).stop().animate({
+            opacity:"1", 
+            zoom: '120%'
+        }, zoomSpeed)
+    
+    }, function()
+    {
+        $('h3', this).stop().fadeTo(200, 1);
+        $('img', this).stop().fadeTo(200, 0.4);
+        
+        var h = $(this).height();
+        var w = $(this).width();
+
+        //get div dimensions
+        var div_h =$(this).height();
+        var div_w =$(this).width();
+
+        var  pY = Math.round((div_h - h) / 2) + 'px';
+        var  pX = Math.round((div_w - w) / 2) + 'px';
+
+        $(this).stop().animate({
+            opacity:"1", 
+            zoom: '100%'
+        }, zoomSpeed)
     });
                         
 });

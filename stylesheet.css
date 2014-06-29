@@ -390,34 +390,46 @@ body
 
 /* My Work
 ==================================================================================*/
-.list-of-work
+.list-of-work, .jobs
 {
     width:60%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-.list-of-work li
+.list-of-work li, .jobs li
 {
+    display: inline-block;
     height: 300px;
     width: 300px;  
     border: 2px solid #555555;
+    margin-left: 5%;
 }
 
-.list-of-work h3
+.list-of-work h3, .jobs h3
 {
     display: inline-block;
     font-size: 32px;
     margin: 30px 20px;
     position: absolute;
-    text-shadow: 5px 5px 8px #333333;
+    color: #4c9dff;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.list-of-work img
+.list-of-work img, .jobs img
 {
     position: absolute;
     opacity: 0.4;
 }
+
+#job-section
+{
+    padding-top: 75px; 
+    padding-left: 100px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
 
 
 /*   MEDIA QUERIES
